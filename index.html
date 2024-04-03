@@ -10,15 +10,64 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/assets/css/main.css" />
+		<style>
+			.icons li a {
+				color: grey; /* Default icon color */
+				transition: color 0.3s; /* Smooth color transition */
+			}
+			.inner {
+				text-align: center; /* Centering content */
+			}
+			.image.avatar img {
+				width: 80px; /* Adjust the size of the image as needed */
+				height: auto;
+				border: 2px solid white; /* White border around the image */
+				border-radius: 50%; /* Makes the image round */
+				margin-bottom: 0px;
+			}
+			.icons {
+				padding: 0;
+				list-style: none;
+				display: inline-block; /* Center the icons */
+			}
+			.icons li {
+				display: inline;
+			}
+
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/new.jpg" alt="" /></a>
-					<h1><strong>Tareq Aghabi</strong></h1>
-					<!--<p>Analytics Manager</p>-->
+					<div class="inner" style="text-align: center;">
+						<a href="#" class="image avatar">
+							<img src="images/new.jpg" alt="" style="width: 80px; height: auto; border: 2px solid white; border-radius: 50%; margin-bottom: 0px; display: inline-block;" />
+						</a>
+						<h1 style="margin: 0; font-size: 34px;"><b>Tareq Aghabi</b></h1>
+					</div>
+					<p>Welcome to my website!</p>
+					<!-- Social Icons -->
+					<ul class="icons">
+						<li>
+							<a href="https://www.linkedin.com/in/tareqaghabi/" class="icon brands fa-linkedin-in" style="font-size: 15px;">
+								<span class="label">LinkedIn</span>
+							</a>
+						</li>
+						<li>
+							<a href="mailto:tareqaghabi@gmail.com" class="icon solid fa-envelope" style="font-size: 15px;">
+								<span class="label">Email</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/taghabi" class="icon brands fa-github" style="font-size: 15px;">
+								<span class="label">Github</span>
+							</a>
+						</li>
+					</ul>
+					
+					<!-- End Social Icons -->
 				</div>
 			</header>
 						
@@ -30,7 +79,8 @@
 							<img src="/images/icons/user.png" alt="Profile Icon" style="height: 1.4em; filter: grayscale(100%) sepia(100%) hue-rotate(180deg) saturate(5000%);" />
 							<h2 style="display: inline-block; margin-left: 5px;">PROFILE</h2>
 						</header>
-						<p> Senior Data Analytics Manager and Industrial Engineer with 7 years of experience in Advanced Data Analysis, Automation & AI, Development & Modeling, Visualization, Supply Chain Operations, Upstream and Downstream Retail & Distribution, proficient in SQL, LookML, BigQuery, PowerBI, Python, R and Excel. Canadian and Jordanian citizen, native in English and Arabic.
+						<p> 
+							Born a computer gamer. Senior Analytics Manager at Al-Futtaim, experienced in AI, automation, and visualization.
 						</p>
 						<div class="row">
 							<div class="column">
@@ -109,36 +159,36 @@
 							<h2 style="display: inline-block; margin-left: 5px;">PROJECTS</h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/PalmerPenguins.jpeg" class="image fit thumb"><img src="images/fulls/PalmerPenguins.jpeg" alt="" /></a>
+								<!-- <a href="images/fulls/PalmerPenguins.jpeg" class="image fit thumb"><img src="images/fulls/PalmerPenguins.jpeg" alt="" /></a> -->
 								<h3><a href="https://github.com/taghabi/palmer_penguins_analysis">Palmer Penguins Analysis with Python </h3></a>
-								<p>This project aims to analyze the Palmer Penguins dataset, collected from Antarctica, to gain insights into penguin ecology, behavior, and physical characteristics, and to develop predictive models using Python libraries and machine learning techniques for conservation purposes.</p>
+								<p>Analyzing Antarctica's Palmer Penguins dataset to understand their ecology and behaviors, using Python for predictive modeling and conservation insights.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/CleaningNashvilleHousing.jpeg" class="image fit thumb"><img src="images/fulls/CleaningNashvilleHousing.jpeg" alt="" /></a>
+								<!-- <a href="images/fulls/CleaningNashvilleHousing.jpeg" class="image fit thumb"><img src="images/fulls/CleaningNashvilleHousing.jpeg" alt="" /></a> -->
 								<h3><a href="https://github.com/taghabi/PortifolioProjects/blob/main/SQLDataCleaningNashvilleHousing.sql">Data Cleaning in SQL</h3></a>
 								<p>In this project, we take raw Nashville Housing data and transform it in Microsoft SQL Server Studio to make it more usable for analysis.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/MovieCorrelation.jpeg" class="image fit thumb"><img src="images/fulls/MovieCorrelation.jpeg" alt="" /></a>
+								<!-- <a href="images/fulls/MovieCorrelation.jpeg" class="image fit thumb"><img src="images/fulls/MovieCorrelation.jpeg" alt="" /></a> -->
 								<h3><a href="https://github.com/taghabi/PortifolioProjects/blob/main/Movie%20Correlation%20Project.ipynb">Movie Correlation with Python</h3></a>
 								<p>In this project, we use Python to study and vizualize the correlation between movie gross revenue and various factors.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/CryptoForecast.jpeg" class="image fit thumb"><img src="images/fulls/CryptoForecast.jpeg" alt="" /></a>
+								<!-- <a href="images/fulls/CryptoForecast.jpeg" class="image fit thumb"><img src="images/fulls/CryptoForecast.jpeg" alt="" /></a> -->
 								<h3><a href="https://github.com/taghabi/CapstoneHarvardx/blob/main/Crypto_Forecast2021.pdf">Cyrptocurrency Forecast	 with R</h3></a>
 								<p>In this project, we use R to study, visualize, and forecast cyrptocurrency price movements using time-series analysis.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/AmazonScrape.jpeg" class="image fit thumb"><img src="images/fulls/AmazonScrape.jpeg" alt="" /></a>
+								<!-- <a href="images/fulls/AmazonScrape.jpeg" class="image fit thumb"><img src="images/fulls/AmazonScrape.jpeg" alt="" /></a> -->
 								<h3><a href="https://github.com/taghabi/Amazon-Web-Scraping/blob/main/Amazon%20Web%20Scraping.ipynb">Web Scraping with Python</h3></a>
 								<p>In this project, we scrape and clean Amazon product data daily for a laptop charger and store it in a csv file to make it more usable for analysis.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/MovieLens.jpeg" class="image fit thumb"><img src="images/fulls/MovieLens.jpeg" alt="" /></a>
+								<!-- <a href="images/fulls/MovieLens.jpeg" class="image fit thumb"><img src="images/fulls/MovieLens.jpeg" alt="" /></a> -->
 								<h3><a href="https://github.com/taghabi/MovieLensCapstone/blob/master/MovieLensCapstone.pdf">Movie Recommendation System with R</h3></a>
 								<p>In this project, we use R to explore the MoveLens dataset and create a movie recommendation system.</p>
 							</article>							
-							<article class="col-6 col-12-xsmall work-item">
+							<!-- <article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/ExploringCovid19.jpeg" class="image fit thumb"><img src="images/fulls/ExploringCovid19.jpeg" alt="" /></a>
 								<h3><a href="https://github.com/taghabi/PortifolioProjects/blob/main/CovidExploration.sql">Data Exploration in SQL</h3></a>
 								<p>In this project, we explore global COVID 19 data using Microsoft SQL Server Studio.</p>
@@ -147,7 +197,7 @@
 								<a href="images/fulls/Tableau.jpeg" class="image fit thumb"><img src="images/fulls/Tableau.jpeg" alt="" /></a>
 								<h3><a href="https://public.tableau.com/app/profile/tareq.aghabi">Tableau Dashboards</h3></a>
 								<p>Tableau dashboard for project on COVID 19 data exploration and forecast.</p>
-							</article>
+							</article> -->
 						</div>
 					</section>
 
@@ -190,11 +240,6 @@
 			<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/tareqaghabi/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="mailto:tareqaghabi@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						<li><a href="https://github.com/taghabi" class="icon brands fa-github"><span class="label">Github</span></a></li>
-					</ul>
 					<ul class="copyright">
 						<li>&copy; Tareq Aghabi</li>
 					</ul>
